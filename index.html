@@ -185,7 +185,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
           <li class="navbar-item">
@@ -641,150 +641,96 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio" style="background-image: url('https://example.com/background.jpg'); background-size: cover; background-position: center; padding: 20px;">
+      <article class="portfolio" data-page="projects" style="background-image: url('https://example.com/background.jpg'); background-size: cover; background-position: center; padding: 20px;">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
       
         <section class="projects">
       
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-          </ul>
-      
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-      
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-            </ul>
-          </div>
-      
+          <!-- Project List -->
           <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://weather-app-sooty-sigma-12.vercel.app/" alt="Weather App" loading="lazy">
-                </figure>
+            <li class="project-item" data-category="web development">
+              <a href="https://weather-app-sooty-sigma-12.vercel.app/" class="project-link">
+                <div class="project-icon-box">
+                  <ion-icon name="cloud-outline"></ion-icon>
+                </div>
                 <h3 class="project-title">Weather App</h3>
-                <p class="project-category">Web development</p>
+                <p class="project-category">Explore real-time weather updates</p>
               </a>
+              <button class="live-demo-btn" onclick="window.open('https://weather-app-sooty-sigma-12.vercel.app/', '_blank')">Go Live</button>
             </li>
       
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://movie-recommendation-bice-zeta.vercel.app/" alt="Movie App" loading="lazy">
-                </figure>
+            <li class="project-item" data-category="web development">
+              <a href="https://movie-recommendation-bice-zeta.vercel.app/" class="project-link">
+                <div class="project-icon-box">
+                  <ion-icon name="film-outline"></ion-icon>
+                </div>
                 <h3 class="project-title">Movie App</h3>
-                <p class="project-category">Web development</p>
+                <p class="project-category">Web Development</p>
               </a>
+              <button class="live-demo-btn" onclick="window.open('https://movie-recommendation-bice-zeta.vercel.app/', '_blank')">Go Live</button>
             </li>
       
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://base-converter-nine.vercel.app/" alt="Base Converter" loading="lazy">
-                </figure>
+            <li class="project-item" data-category="web design">
+              <a href="https://base-converter-nine.vercel.app/" class="project-link">
+                <div class="project-icon-box">
+                  <ion-icon name="calculator-outline"></ion-icon>
+                </div>
                 <h3 class="project-title">Base Converter</h3>
-                <p class="project-category">Web design</p>
+                <p class="project-category">Web Design</p>
               </a>
+              <button class="live-demo-btn" onclick="window.open('https://base-converter-nine.vercel.app/', '_blank')">Go Live</button>
             </li>
       
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://daisy-ui-flax.vercel.app/" alt="DaisyUI" loading="lazy">
-                </figure>
+            <li class="project-item" data-category="applications">
+              <a href="https://daisy-ui-flax.vercel.app/" class="project-link">
+                <div class="project-icon-box">
+                  <ion-icon name="apps-outline"></ion-icon>
+                </div>
                 <h3 class="project-title">DaisyUI</h3>
                 <p class="project-category">Applications</p>
               </a>
+              <button class="live-demo-btn" onclick="window.open('https://daisy-ui-flax.vercel.app/', '_blank')">Go Live</button>
             </li>
       
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://book-app-frontend-steel.vercel.app/" alt="Book Repository" loading="lazy">
-                </figure>
+            <li class="project-item" data-category="web design">
+              <a href="https://book-app-frontend-steel.vercel.app/" class="project-link">
+                <div class="project-icon-box">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
                 <h3 class="project-title">Book Repository</h3>
-                <p class="project-category">Web design</p>
+                <p class="project-category">Web Design</p>
               </a>
+              <button class="live-demo-btn" onclick="window.open('https://book-app-frontend-steel.vercel.app/', '_blank')">Go Live</button>
             </li>
       
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://todo-react-eight-psi.vercel.app/" alt="Todo App" loading="lazy">
-                </figure>
+            <li class="project-item" data-category="web design">
+              <a href="https://todo-react-eight-psi.vercel.app/" class="project-link">
+                <div class="project-icon-box">
+                  <ion-icon name="checkmark-done-outline"></ion-icon>
+                </div>
                 <h3 class="project-title">Todo App</h3>
-                <p class="project-category">Web design</p>
+                <p class="project-category">Web Design</p>
               </a>
+              <button class="live-demo-btn" onclick="window.open('https://todo-react-eight-psi.vercel.app/', '_blank')">Go Live</button>
             </li>
       
-      
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://proffmash.github.io/Static-Job-Listing/" alt="Job Listing" loading="lazy">
-                </figure>
+            <li class="project-item" data-category="web development">
+              <a href="https://proffmash.github.io/Static-Job-Listing/" class="project-link">
+                <div class="project-icon-box">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
                 <h3 class="project-title">Job Listing</h3>
-                <p class="project-category">Web development</p>
+                <p class="project-category">Web Development</p>
               </a>
+              <button class="live-demo-btn" onclick="window.open('https://proffmash.github.io/Static-Job-Listing/', '_blank')">Go Live</button>
             </li>
           </ul>
       
         </section>
       </article>
-      
       <!--
         - #CONTACT
       -->
